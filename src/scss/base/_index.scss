@@ -1,3 +1,10 @@
 @forward "font-face";
 @forward "typography";
 @forward "reset";
+
+body {
+  background-color: var(--clr-neutrals-500);
+  background-image: url("/images/bg-stars.svg");
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,50 @@
+@use "font-face" as *;
+@use "src/scss/abstracts/colors" as *;
+@use "src/scss/abstracts/type" as *;
+
+@each $tag, $size in $font-sizes {
+  #{$tag} {
+    font-size: $size;
+  }
+}
+body {
+  font-family: $ff-ss;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--clr-neutrals-100);
+  font-weight: $fw-b;
+  line-height: 1.1;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+h4 {
+  font-weight: $fw-n;
+  margin: 0;
+  text-align: center;
+  line-height: 1;
+}
+
+p {
+  color: var(--clr-primary-100);
+  font-weight: $fw-b;
+  line-height: 1.6;
+  margin-top: 1em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 1em;
+}
+
+button {
+  color: white;
+  font-weight: $fw-n;
+}

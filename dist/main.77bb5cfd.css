@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap");
+body {
+  font-size: 62.5%;
+}
+
 h1 {
-  font-size: 2.4rem;
+  font-size: 1.6rem;
 }
 
 h2 {
@@ -16,7 +20,7 @@ h4 {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 0.5rem;
 }
 
 a {
@@ -27,18 +31,22 @@ button {
   font-size: 1rem;
 }
 
+body {
+  font-family: "Red Hat Text", sans-serif;
+}
+
 h1,
 h2,
 h3 {
-  font-family: "Red Hat Text", sans-serif;
   color: var(--clr-neutrals-100);
   font-weight: 700;
   line-height: 1.1;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
 }
 
 h4 {
-  font-family: "Red Hat Text", sans-serif;
   font-weight: 400;
   margin: 0;
   text-align: center;
@@ -46,12 +54,13 @@ h4 {
 }
 
 p {
-  font-family: "Red Hat Text", sans-serif;
   color: var(--clr-primary-100);
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1.6;
   margin-top: 1em;
   letter-spacing: 1px;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
 }
 
 h1,
@@ -69,8 +78,7 @@ button {
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Remove default margin */
@@ -85,7 +93,6 @@ blockquote,
 dl,
 dd {
   margin: 0;
-  font-size: 62.5%;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -108,8 +115,7 @@ body {
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
@@ -136,18 +142,17 @@ select {
   *,
 *::before,
 *::after {
-    -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
-    -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
-    -webkit-transition-duration: 0.01ms !important;
-            transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
 }
 body {
   background-color: var(--clr-neutrals-500);
-  font-size: 62.5%;
+  background-image: url("/bg-stars.a0b4604f.svg");
+  display: flex;
+  flex-direction: column;
 }
 
 :root {
@@ -163,35 +168,56 @@ nav {
   background: red;
 }
 
-.timer-unit-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
+footer {
+  background-image: url("/pattern-hills.f72c10e5.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: auto;
+  width: 100%;
+  height: 200px;
+}
+footer .social-icons-wrapper {
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-direction: row;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+footer .social-icons-wrapper .social-icon {
+  margin: 0 1em;
+}
+
+.content-wrapper {
+  margin-top: auto;
+}
+.content-wrapper h1 {
+  margin-bottom: 3em;
+}
+
+.timer-unit-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   width: 100%;
 }
 
 .timer-unit-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .unit-container {
   height: 80px;
   width: 80px;
   background-color: var(--clr-primary-500);
+  margin-bottom: 0.5em;
+  font-size: 1.8rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-/*# sourceMappingURL=main.css.map */
+
+/*# sourceMappingURL=/main.77bb5cfd.css.map */

@@ -1,0 +1,14 @@
+@use "src/scss/abstracts/mixins" as *;
+
+body {
+  font-size: 62.5%;
+}
+$font-sizes: (
+  h1: 1.6rem,
+  h2: 2.4rem,
+  h3: 1.4rem,
+  h4: 1rem,
+  p: 0.5rem,
+  a: 1rem,
+  button: 1rem,
+);

@@ -1,0 +1,33 @@
+@use "src/scss/abstracts/colors" as *;
+@use "src/scss/abstracts/type" as *;
+@use "src/scss/base/font-face" as *;
+
+.content-wrapper {
+  margin-top: auto;
+  h1 {
+    margin-bottom: 3em;
+  }
+}
+.timer-unit-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+.timer-unit-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.unit-container {
+  height: 80px;
+  width: 80px;
+  background-color: var(--clr-primary-500);
+  margin-bottom: 0.5em;
+  font-size: 1.8rem;
+  font-weight: $fw-b;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
