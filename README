@@ -4,9 +4,18 @@ What is needed for a countdown?
 - Target time (date, specific amt of time, etc.)
 - Units (Days, Hours, Minutes, Seconds)
 
-Input: 1 Day (24 hours, 1440 min, 86400 sec)
+Input: end date compared to the current date/time
 Output: Tracker of time by the second
     - Seconds <60
     - Minutes <60
     - Hours <24
-    - if (days <=30) 
+    - if (days <=30)
+
+countDownTimer(dt){
+    var end = new Date(dt);
+
+    var seconds = 1000;
+    var minutes = 
+    var hours = 
+    var days = 
+}
